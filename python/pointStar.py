@@ -1,4 +1,4 @@
-N = int(input())
+# N = int(input())
 
 def pointStar(N):
     for i in range(N):
@@ -14,6 +14,16 @@ def pointStarReverse(N):
         star = ""
         for i in range(N-i):
             star += "*"
+        print(star)
+
+#2441
+def pointStarInverse(N):
+    for i in range(N):
+        star = ""
+        for j in range(i):
+            star +=" "
+        for j in range(N-i):
+            star +="*"
         print(star)
 
 
