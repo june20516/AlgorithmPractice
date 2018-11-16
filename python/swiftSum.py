@@ -1,11 +1,8 @@
 import sys
 
-def swiftSum():
-    s = sys.stdin.readline()
-    a = s.split()
-    if len(a) != 2:
-        return
-    print(int(a[0]) + int(a[1]))
+test = open('test/fastSumTest.txt', mode='rt', encoding='utf-8')
 
-while True:
-    swiftSum()
+for i in range(int(test.readline())):
+    case = test.readline()
+    arr = list(map(int,case.split()))
+    print(int(sum(arr,0)))
