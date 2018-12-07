@@ -14,15 +14,27 @@ print(cnt+1)
 
 #1193
 x = int(input())
-step = 1
-num = 1
+head = []
+tail = []
 
+n = 0
+while len(head) < x:
+    if n % 2 == 0:
+        for i in range(n):
+            head.append(i+1)
+    else:
+        for i in range(n):
+            head.append(n-i)
+    n += 1
+    
+m = 0
+while len(tail) < x:
+    if m % 2 == 1:
+        for j in range(m):
+            tail.append(j+1)
+    else:
+        for j in range(m):
+            tail.append(m-j)
+    m += 1
 
-while num < x:
-    step += 1
-    num += step*1
-
-s = 1 + (x - step)
-m = step - (x - step)
-
-print('{s}/{m}'.format(s = s, m = m))
+print('{a}/{b}'.format(a = head[x-1], b = tail[x-1]))
