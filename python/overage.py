@@ -1,7 +1,7 @@
 #4344
 import sys
 
-test = open('python/test/overage.txt', mode='rt', encoding='utf-8')
+test = open('test/overage.txt', mode='rt', encoding='utf-8')
 
 C = int(test.readline())
 
