@@ -9,10 +9,10 @@ for i in range(T):
     sum += idx
     arr[idx] += 1
 
-#mean
+#평균
 print(int(sum / T + 0.5))
 
-#midVal
+#중간값
 midIdx = 0
 j = -4000
 while midIdx < T // 2:
@@ -22,14 +22,14 @@ while midIdx < T // 2:
 print(j)
 
 
-#mode
+#모드
 mode = arr.index(max(arr))
 if mode > 4001:
     print(4001-mode)
 else:
     print(mode)
 
-#range
+#범위
 c = 4001
 while arr[c] = 0:
     c-=1
